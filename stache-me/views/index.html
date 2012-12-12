@@ -1,0 +1,59 @@
+<html>
+  <head>
+    <title>'Stache Me!</title>
+    <link rel="stylesheet" type="text/css" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.1/themes/base/jquery-ui.css"/>
+    <script src="/scripts/jquery.js"></script>
+    <script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+    <script src="http://static.opentok.com/v1.1/js/TB.min.js"></script>
+    <script>
+      var apiKey = '<%= apiKey %>';
+      var sessionId = '<%= sessionId %>';
+      var token = '<%= token %>';
+
+      $(function() {
+        $.get('http://localhost:3111/moustaches', function(data) {
+          var staches = $.parseJSON(data);
+
+          console.log(staches);
+          for(var i = 0, len = staches.length; i < len; i++) {
+            var stache = staches[i];
+
+            var id = stache.id;
+
+            var div = $('<div></div>')
+                        .attr('id', id)
+                        .addClass('stache')
+                        .css('background-image', 'url(' + stache.image + ')');
+
+            $('#moustaches').append(div);
+          }
+
+          $('.stache').draggable().resizable();
+        });
+      });
+    </script>
+    <script src="/scripts/opentok-client.js"></script>
+    <style>
+      .stache {
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-color: transparent;
+        border-color: transparent;
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="tok"></div>
+      <div id="moustaches">
+      <!--
+      <div id="stache01" class="stache"  class="ui-widget-content"></div>
+      <div id="stache02" class="stache"  class="ui-widget-content"></div>
+      <div id="stache03" class="stache"  class="ui-widget-content"></div>
+      <div id="stache04" class="stache"  class="ui-widget-content"></div>
+      -->
+    </div>
+  </body>
+</html>
+

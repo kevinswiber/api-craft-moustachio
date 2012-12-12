@@ -1,0 +1,62 @@
+[
+  {
+    "id": "stache01",
+    "name": "fu goatee",
+    "image": "stache01.png",
+    "price": 2.99
+  },
+  {
+    "id": "stache02",
+    "name": "wilford",
+    "image": "stache02.png",
+    "price": 1.99
+  },
+  {
+    "id": "stache03",
+    "name": "fu bar",
+    "image": "stache03.png",
+    "price": 3.99
+  },
+  {
+    "id": "stache04",
+    "name": "walrus",
+    "image": "stache04.png",
+    "price": 0.99
+  },
+  {
+    "id": "stache05",
+    "name": "houdini",
+    "image": "stache05.png",
+    "price": 1.99
+  },
+  {
+    "id": "stache06",
+    "name": "pencil",
+    "image": "stache06.png",
+    "price": 0.84
+  },
+  {
+    "id": "stache08",
+    "name": "howie",
+    "image": "stache07.png",
+    "price": 2.99
+  },
+  {
+    "id": "stache08",
+    "name": "chevron",
+    "image": "stache08.png",
+    "price": 1.99
+  },
+  {
+    "id": "stache09",
+    "name": "man fu",
+    "image": "stache09.png",
+    "price": 2.99
+  },
+  {
+    "id": "stache10",
+    "name": "handlebar",
+    "image": "stache10.png",
+    "price": 1.99
+  }
+]
